@@ -16,3 +16,7 @@ func _physics_process(_delta):
 		player.get_node("Camera2D").current = true
 
 
+
+
+func _on_Area2D_body_entered(body):
+	queue_free() 
